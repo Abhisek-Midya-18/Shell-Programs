@@ -1,0 +1,70 @@
+w -h  #display users login time and others in list
+
+free -m  #gives free memory space
+
+uniq -u file1  # display the unique lines of the file file1
+
+ls[aeiou]*
+
+touch file1 #create an empty file
+
+df # display the disksfree space
+
+cal # display calendar
+
+cal 2 2020 # display the calendar of february 2020
+
+tr '[A-Z]' '[a-z]' file1
+
+grep b??k file1  #?indicates character
+
+grev -v a* file1
+
+ls -l | grep "^d"  # started with d. It display all directories under current directory
+
+ls -l | grep "^-" # It display all filees in current directory
+
+head -10 file1 # first 10 lines of file1
+
+tail -5 file1  # last 5 lines of file1
+
+head -m file1 | tail -n  or cat file1 | head -m | tail -n
+
+tac file1 # reverse the file
+
+compress -v file2.txt # -v tells compress to report how much space it saved
+
+ls -r | more
+
+factor n # display prime factors
+
+$tty #current terminal
+
+date # display the current date
+
+date '+DATE: %d-%m-%y%n TIME: %H:%M:%S'
+
+grep ";$" file1 # lines of file1 ended with ;
+
+sed 's\are\\' file1 # are will be deleted from file1
+
+sed 'India is great' file1 # this command enter this line before every line of file1
+
+sed 's\are\is\' file1 #here are is replaced by is
+
+a=( $* ) # stroe command line arguments into an array
+
+echo ${a[*]} # display all elements of the array
+
+for((i=0i<$#;i++))
+  do
+    echo ${a[i]}
+  done
+
+cat file1 | tr '0123456789' ' ' > ff  #delete all numbers from file file1 and store into ff
+
+mv ff file1 # rename ff with file1
+
+l=`echo "scale=2;sqrt($x)"|bc`
+  
+x=$(echo "scale=2;sqrt($x)"|bc)
